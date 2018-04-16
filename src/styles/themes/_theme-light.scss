@@ -1,0 +1,10 @@
+$theme-light-primary: mat-palette($mat-indigo, 700);
+$theme-light-acent: mat-palette($mat-light-blue);
+$theme-light-warn: mat-palette($mat-deep-orange);
+
+$theme-light: mat-light-theme(
+    $theme-light-primary,
+    $theme-light-acent,
+    $theme-light-warn
+)
+

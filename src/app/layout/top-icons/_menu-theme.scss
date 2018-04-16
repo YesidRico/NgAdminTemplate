@@ -1,0 +1,10 @@
+@import "~@angular/material/theming";
+
+@mixin menu-theme($theme){
+    $primary: map-get($theme, primary);
+
+     .mat-menu-item{
+        background-color: mat-color($primary, 800);
+        color: mat-color($primary, default-contrast);
+    }
+}

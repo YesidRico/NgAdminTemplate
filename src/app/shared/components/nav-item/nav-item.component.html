@@ -1,0 +1,14 @@
+<h3 mat-subheader>Dashboard</h3>
+<a mat-list-item [routerLink]="item.url" *ngFor="let item of sidenav_list_item.Dashboard">
+  <mat-icon>{{item.icon}}</mat-icon> {{item.title}}
+</a>
+<mat-divider></mat-divider>
+<h3 mat-subheader>Blog</h3>
+<a mat-list-item [routerLink]="item.url" *ngFor="let item of sidenav_list_item.Blog">
+  <mat-icon>{{item.icon}}</mat-icon> {{item.title}}
+</a>
+<mat-divider></mat-divider>
+<h3 mat-subheader>Contacts</h3>
+<a mat-list-item [routerLink]="item.url" *ngFor="let item of sidenav_list_item.Contacts">
+  <mat-icon>{{item.icon}}</mat-icon> {{item.title}}
+</a>

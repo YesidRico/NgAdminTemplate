@@ -1,0 +1,19 @@
+.mat-toolbar-row{
+   padding: 0;
+}
+
+.mat-sidenav-container{
+    height: 100vh;
+    .sidenav{
+        width: 280px;
+    }
+    .mat-sidenav-content{
+       .content{
+           padding: 14px;
+       }
+    }
+}
+
+.text-logo{
+    padding: 10px;
+}

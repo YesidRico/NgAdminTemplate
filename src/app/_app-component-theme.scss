@@ -1,0 +1,19 @@
+@import "~@angular/material/theming";
+
+@mixin toolbar-theme($theme){
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+
+    .mat-toolbar, .sidenav-toolbar{
+        color: mat-color($primary, default-contrast);
+    }
+    .mat-toolbar{
+        background-color: mat-color($primary, 800);
+    }
+    .sidenav-toolbar{
+        background-color: mat-color($primary, 800);
+    }
+}
+
+
+

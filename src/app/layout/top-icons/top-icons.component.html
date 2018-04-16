@@ -1,0 +1,18 @@
+<button mat-icon-button class="icon">
+  <mat-icon>search</mat-icon>
+</button>
+<button mat-icon-button class="icon">
+  <mat-icon>notifications</mat-icon>
+</button>
+<span matTooltip="Tooltip!">
+  <button mat-icon-button class="icon" [matMenuTriggerFor]="menuTheme">
+    <mat-icon>format_color_fill</mat-icon>
+  </button>
+</span>
+<button mat-button class="icon" (click)="sidenavToggle()">
+  <mat-icon>list</mat-icon>
+</button>
+
+<mat-menu #menuTheme="matMenu">
+  <button mat-menu-item *ngFor="let t of themes_list" (click)="selectedTeheme(t)">{{t.theme}}</button>
+</mat-menu>
