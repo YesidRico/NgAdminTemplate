@@ -13,6 +13,6 @@
   <mat-icon>list</mat-icon>
 </button>
 
-<mat-menu #menuTheme="matMenu">
-  <button mat-menu-item *ngFor="let t of themes_list" (click)="selectedTeheme(t)">{{t.theme}}</button>
+<mat-menu #menuTheme="matMenu" >
+  <button mat-menu-item  *ngFor="let t of themes_list" (click)="selectedTeheme(t)">{{t.theme}}</button>
 </mat-menu>

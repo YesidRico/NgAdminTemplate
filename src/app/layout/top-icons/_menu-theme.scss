@@ -3,8 +3,8 @@
 @mixin menu-theme($theme){
     $primary: map-get($theme, primary);
 
-     .mat-menu-item{
+    .mat-menu-panel{
         background-color: mat-color($primary, 800);
         color: mat-color($primary, default-contrast);
-    }
+    } 
 }

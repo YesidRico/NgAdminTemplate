@@ -35,7 +35,7 @@ import { TopIconsComponent } from './layout/top-icons/top-icons.component';
     TopIconsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
